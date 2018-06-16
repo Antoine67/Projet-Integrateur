@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val="Moteurs gauches"/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(340,180)" to="(400,180)"/>
+    <wire from="(450,280)" to="(570,280)"/>
+    <wire from="(340,160)" to="(340,180)"/>
+    <wire from="(710,560)" to="(750,560)"/>
+    <wire from="(710,560)" to="(710,590)"/>
+    <wire from="(600,280)" to="(700,280)"/>
+    <wire from="(340,160)" to="(760,160)"/>
+    <wire from="(490,560)" to="(490,590)"/>
+    <wire from="(500,180)" to="(500,590)"/>
+    <wire from="(470,230)" to="(470,460)"/>
+    <wire from="(750,520)" to="(750,560)"/>
+    <wire from="(460,560)" to="(490,560)"/>
+    <wire from="(320,180)" to="(340,180)"/>
+    <wire from="(320,230)" to="(470,230)"/>
+    <wire from="(450,280)" to="(450,460)"/>
+    <wire from="(460,510)" to="(460,560)"/>
+    <wire from="(470,230)" to="(740,230)"/>
+    <wire from="(700,640)" to="(700,700)"/>
+    <wire from="(320,280)" to="(450,280)"/>
+    <wire from="(740,230)" to="(740,470)"/>
+    <wire from="(500,640)" to="(500,700)"/>
+    <wire from="(700,280)" to="(700,590)"/>
+    <wire from="(430,180)" to="(500,180)"/>
+    <wire from="(760,160)" to="(760,470)"/>
+    <comp lib="6" loc="(566,72)" name="Text">
+      <a name="text" val="Cas de 3 capteurs"/>
+      <a name="font" val="SansSerif bold 28"/>
+    </comp>
+    <comp lib="0" loc="(320,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Capteur ligne n°2(milieu)"/>
+    </comp>
+    <comp lib="0" loc="(320,280)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Capteur ligne n°3(droite)"/>
+    </comp>
+    <comp lib="6" loc="(153,73)" name="Text">
+      <a name="text" val="Groupe 13"/>
+      <a name="font" val="SansSerif bolditalic 28"/>
+    </comp>
+    <comp lib="1" loc="(460,510)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(430,180)" name="NOT Gate"/>
+    <comp lib="1" loc="(600,280)" name="NOT Gate"/>
+    <comp lib="0" loc="(500,700)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Moteurs gauche"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(320,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Capteur ligne n°1(gauche)"/>
+    </comp>
+    <comp lib="1" loc="(500,640)" name="OR Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(700,700)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Moteurs droite"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="1" loc="(700,640)" name="OR Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(750,520)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+  </circuit>
+</project>
